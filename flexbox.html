@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <style>
+        @media(min-width: 768px) {
+            .container {
+                display: flex;
+                align-items: stretch;
+                flex-direction: row;
+            }
+            .container-2 {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        
+        .container div,
+        .container-2 div {
+            border: 1px solid rgb(221, 27, 27);
+            padding: 10px;
+        }
+        
+        .box1 {
+            flex: 1;
+            order: 3;
+        }
+        
+        .box2 {
+            flex: 2;
+            order: 1;
+        }
+        
+        .box3 {
+            flex: 1;
+            order: 2;
+        }
+        
+        .box4 {
+            flex: 1;
+            order: 4;
+        }
+        
+        .box5 {
+            flex-basis: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <h2>Box-01</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta minus aspernatur itaque deserunt quibusdam, esse alias nobis! Placeat, laboriosam!</p>
+
+        </div>
+
+        <div class="box2">
+            <h2>Box-02</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam accusantium repudiandae dolorum, quia adipisci distinctio.</p>
+        </div>
+
+        <div class="box3">
+            <h2>Box-03</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id numquam, odio quasi fugiat repudiandae voluptate ipsa deserunt?</p>
+        </div>
+
+        <div class="box4">
+            <h2>Box-04</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates soluta nam doloribus vel, odit dignissimos.</p>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="box5">
+            <h2>Box-05</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta minus aspernatur itaque deserunt quibusdam, esse alias nobis! Placeat, laboriosam!</p>
+
+        </div>
+
+        <div class="box5">
+            <h2>Box-06</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam accusantium repudiandae dolorum, quia adipisci distinctio.</p>
+        </div>
+
+        <div class="box5">
+            <h2>Box-07</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id numquam, odio quasi fugiat repudiandae voluptate ipsa deserunt?</p>
+        </div>
+
+        <div class="box5">
+            <h2>Box-08</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptates soluta nam doloribus vel, odit dignissimos.</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
